@@ -104,3 +104,20 @@ Con un PostgreSQL de pruebas aislado, crear una base llamada `ecoconecta_test`, 
 ## Limitaciones y publicación
 
 La aplicación no puede considerarse publicada hasta ejecutar el despliegue real y registrar una URL pública con HTTPS. Para hacerlo, sigue `docs/PUBLICACION.md`. No se incluyen llaves ni credenciales ni URL inventada. Los puntos demostrativos no son reglas oficiales de Fundación Santo Domingo.
+
+
+## Identidad visual aplicada (revisión de fidelidad)
+
+La interfaz utiliza los códigos HEX del Manual de Identidad Visual EcoConecta Villas de San Pablo, sección 2 y sección 8: verde bosque `#063B2E`, verde Eco `#168A2E`, verde hoja `#65A90A`, verde turquesa `#0A9B70`, amarillo solar `#F6C400`, naranja mariposa `#F28C00`, carbón `#202522`, blanco `#FFFFFF` y fondo neutro `#F2F5F2`.
+
+Tipografías de interfaz: Poppins para encabezados e Inter para textos, botones y etiquetas. Los logotipos se conservan como archivos gráficos originales; no se reconstruyen ni recolorean. La barra superior usa verde bosque, la acción principal verde Eco y los puntos/incentivos amarillo solar. Los estados deben mostrar texto e icono además del color.
+
+## Publicar esta actualización
+
+1. Descomprimir este ZIP y abrir la carpeta `ecoconecta` en VS Code.
+2. Copiar/reemplazar los archivos de esa carpeta en la carpeta local que ya está conectada al repositorio GitHub, sin reemplazar el `.env` local.
+3. En GitHub Desktop revisar los cambios, escribir un resumen como `Ajusta identidad visual EcoConecta` y pulsar **Commit to main**.
+4. Pulsar **Push origin**. Render detectará el nuevo commit y ejecutará un despliegue.
+5. Esperar el estado **Live** y abrir `https://ecoconecta-290u.onrender.com`. Recargar con `Ctrl + F5`.
+
+No se debe subir `.env` ni cambiar las variables privadas de Render para una actualización únicamente visual. La base de datos PostgreSQL no se modifica.
